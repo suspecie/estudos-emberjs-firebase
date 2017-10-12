@@ -7,10 +7,7 @@ export default Route.extend({
             this.transitionTo('posts');
         }
     },
-    model: function () {
-        let posts = this.store.findAll('post');
-        return posts.then((results) => {
-            return results.get('firstObject');
-        });
+    model: function (params) {
+        return this.store.findRecord('post', params.id);
     }
 });
