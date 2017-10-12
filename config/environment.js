@@ -23,7 +23,6 @@ module.exports = function(environment) {
       // when it is created
     },
     firebase: {
-
         /*apiKey: 'xyz',
         authDomain: 'YOUR-FIREBASE-APP.firebaseapp.com',
         databaseURL: 'https://YOUR-FIREBASE-APP.firebaseio.com',
