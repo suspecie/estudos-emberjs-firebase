@@ -1,12 +1,6 @@
 <section>
     <h1>Artigos</h1>
-    {{#each model as |post|}}
-        <div>
-            {{post.title}}
-            {{post.body}}
-        </div>
-    {{/each}}
-
+    
     {{ outlet }}
 
     {{#link-to "posts.create" }}
