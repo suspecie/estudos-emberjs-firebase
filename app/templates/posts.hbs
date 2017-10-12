@@ -6,4 +6,10 @@
             {{post.body}}
         </div>
     {{/each}}
-</section>
+
+    {{ outlet }}
+
+    {{#link-to "posts.create" }}
+        Novo
+    {{/link-to}}
+</section>  
