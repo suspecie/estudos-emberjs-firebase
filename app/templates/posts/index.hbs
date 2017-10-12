@@ -1,7 +1,9 @@
 {{#each model as |post|}}
     <div>
-        <h4>{{post.title}}</h4>
-        {{post.body}}
+        <h4>{{#link-to "posts.view" post.id }}
+                {{post.title}}
+            {{/link-to}}
+        </h4>
     </div>
     <hr>
 {{/each}}
